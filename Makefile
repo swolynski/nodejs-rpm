@@ -15,7 +15,7 @@ ifeq "$(PYVERSION_270)" "1"
 	cp -pf *.patch dist/SOURCES/
 	rpmbuild -ba \
 		--define "node_version $(NODE_VERSION)" \
-		--define "node_release $(NODE_RELEASE)" \
+		--define "release_number $(RELEASE_NUMBER)" \
 		--define "_topdir $(PWD)/dist" \
 		--define "buildroot $(PWD)/dist/install" \
 		--clean \

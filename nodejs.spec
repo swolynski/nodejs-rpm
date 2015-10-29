@@ -6,7 +6,7 @@
 
 Name:          %{_base}js
 Version:       %{node_version}
-Release:       %{node_release}
+Release:       %{release_number}
 Summary:       Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
 Packager:      NYTimes
 Group:         Development/Libraries
