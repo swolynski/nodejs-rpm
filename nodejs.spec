@@ -5,14 +5,14 @@
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}
 
 Name:          %{_base}js
-Version:       %{node_version}
-Release:       %{release_number}
+Version:       %{_node_version}
+Release:       %{_release_number}
 Summary:       Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
 Packager:      NYTimes
 Group:         Development/Libraries
 License:       MIT License
 URL:           http://nodejs.org
-Source0:       %{url}/dist/v%{node_version}/%{_base}-v%{node_version}.tar.gz
+Source0:       %{url}/dist/v%{_node_version}/%{_base}-v%{_node_version}.tar.gz
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-tmp
 Prefix:        /usr
 BuildRequires: redhat-rpm-config
