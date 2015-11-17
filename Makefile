@@ -13,7 +13,7 @@ ifeq "$(PYVERSION_270)" "1"
 	mkdir -p dist/{BUILD,RPMS,SPECS,SOURCES,SRPMS,install}
 	mv $(BASE)-v*.tar.gz dist/SOURCES/
 	cp -pf *.patch dist/SOURCES/
-	rpmbuild -ba 
+	rpmbuild -ba \
 		--define "_release_number $(RELEASE_NUMBER)" \
 		--define "_topdir $(PWD)/dist" \
 		--define "buildroot $(PWD)/dist/install" \
