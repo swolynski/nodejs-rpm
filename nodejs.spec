@@ -1,5 +1,6 @@
 %define   _base node
 %define   _dist_ver %(sh /usr/lib/rpm/redhat/dist.sh)
+%define   _node_version 4.2.2
 
 %global tapsetroot /usr/share/systemtap
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}
@@ -12,7 +13,7 @@ Packager:      NYTimes
 Group:         Development/Libraries
 License:       MIT License
 URL:           http://nodejs.org
-Source0:       %{url}/dist/v%{_node_version}/%{_base}-v%{_node_version}.tar.gz
+Source0:       %{url}/dist/v%{version}/%{_base}-v%{version}.tar.gz
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-tmp
 Prefix:        /usr
 BuildRequires: redhat-rpm-config
