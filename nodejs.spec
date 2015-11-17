@@ -12,7 +12,7 @@ Packager:      NYTimes
 Group:         Development/Libraries
 License:       MIT License
 URL:           http://nodejs.org
-Source0:       %{url}/dist/v%{version}/%{_base}-v%{version}.tar.gz
+Source0:       %{url}/dist/v%{node_version}/%{_base}-v%{node_version}.tar.gz
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-tmp
 Prefix:        /usr
 BuildRequires: redhat-rpm-config
