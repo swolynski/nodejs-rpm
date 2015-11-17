@@ -1,6 +1,5 @@
 %define   _base node
 %define   _dist_ver %(sh /usr/lib/rpm/redhat/dist.sh)
-%define   _node_version 4.2.2
 
 %global tapsetroot /usr/share/systemtap
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}

@@ -14,6 +14,7 @@ ifeq "$(PYVERSION_270)" "1"
 	mv $(BASE)-v*.tar.gz dist/SOURCES/
 	cp -pf *.patch dist/SOURCES/
 	rpmbuild -ba \
+		--define "_node_version $(NODE_VERSION)" \
 		--define "_release_number $(RELEASE_NUMBER)" \
 		--define "_topdir $(PWD)/dist" \
 		--define "buildroot $(PWD)/dist/install" \
