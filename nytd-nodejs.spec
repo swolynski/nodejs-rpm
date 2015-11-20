@@ -56,7 +56,7 @@ License:       MIT License
 URL:           http://nodejs.org
 Obsoletes:     npm
 Provides:      npm
-Requires:      nodejs
+Requires:      %{name}
 
 %description npm
 Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
