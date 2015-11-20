@@ -123,8 +123,8 @@ for file in CHANGELOG.md LICENSE README.md ; do
 done
 mv $RPM_BUILD_ROOT/usr/share/doc/node/* $RPM_BUILD_ROOT/usr/share/doc/%{_base}-v%{version}/
 rm -rf $RPM_BUILD_ROOT/usr/share/doc/node
-mkdir -p $RPM_BUILD_ROOT/usr/share/%{_base}js
-mv $RPM_SOURCE_DIR/%{_base}-v%{version}-linux-%{_node_arch}.tar.gz $RPM_BUILD_ROOT/usr/share/%{_base}js/
+mkdir -p $RPM_BUILD_ROOT/usr/share/%{name}
+mv $RPM_SOURCE_DIR/%{_base}-v%{version}-linux-%{_node_arch}.tar.gz $RPM_BUILD_ROOT/usr/share/%{name}/
 
 # prefix all manpages with "npm-"
 pushd $RPM_BUILD_ROOT/usr/lib/node_modules/npm/man/
@@ -156,7 +156,7 @@ rm -rf $RPM_SOURCE_DIR/%{_base}-v%{version}-linux-%{_node_arch}
 
 %files binary
 %defattr(-,root,root,-)
-%{_prefix}/share/%{_base}js/%{_base}-v%{version}-linux-%{_node_arch}.tar.gz
+%{_prefix}/share/%{name}/%{_base}-v%{version}-linux-%{_node_arch}.tar.gz
 
 %files npm
 %defattr(-,root,root,-)
