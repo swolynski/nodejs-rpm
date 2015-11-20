@@ -1,11 +1,11 @@
-%define   _base nytd-node
+%define   _base node
 %define   _dist_ver %(sh /usr/lib/rpm/redhat/dist.sh)
 %define   _node_version 4.2.2
 
 %global tapsetroot /usr/share/systemtap
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}
 
-Name:          %{_base}js
+Name:          nytd-%{_base}js
 Version:       %{_node_version}
 Release:       1%{?dist}
 Summary:       Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
