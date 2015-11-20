@@ -1,5 +1,5 @@
 BASE := node
-NAME := $(BASE)js
+NAME := nytd-$(BASE)js
 VERSION := $(shell grep Version: $(NAME).spec | tr -s " "| cut -d " " -f 2)
 
 CC = gcc
