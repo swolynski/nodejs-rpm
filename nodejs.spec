@@ -1,4 +1,4 @@
-%define   _base node
+%define   _base nytd-node
 %define   _dist_ver %(sh /usr/lib/rpm/redhat/dist.sh)
 %define   _node_version 4.2.2
 
@@ -7,7 +7,7 @@
 
 Name:          %{_base}js
 Version:       %{_node_version}
-Release:       %{_release_number}
+Release:       1%{?dist}
 Summary:       Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
 Packager:      NYTimes
 Group:         Development/Libraries
@@ -103,7 +103,7 @@ fi
     --shared-openssl \
     --shared-openssl-includes=%{_includedir} \
     --shared-zlib \
-    --shared-zlib-includes=%{_includedir}
+    --shared-zlib-includes=%{_includedir} \
 make binary %{?_smp_mflags}
 
 pushd $RPM_SOURCE_DIR
