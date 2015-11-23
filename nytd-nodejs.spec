@@ -6,7 +6,7 @@
 
 Name:          nytd-%{_base}js
 Version:       4.2.2
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
 Packager:      NYTimes
 Group:         Development/Libraries
