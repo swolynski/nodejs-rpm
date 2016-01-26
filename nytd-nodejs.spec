@@ -5,7 +5,7 @@
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}
 
 Name:          nytd-%{_base}js
-Version:       4.2.3
+Version:       5.5.0
 Release:       1%{?dist}
 Summary:       Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
 Packager:      NYTimes
