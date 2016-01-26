@@ -164,7 +164,6 @@ rm -rf $RPM_SOURCE_DIR/%{_base}-v%{version}-linux-%{_node_arch}
 
 %doc
 /usr/share/man/man1/npm*
-/usr/share/man/man3
 /usr/share/man/man5
 /usr/share/man/man7
 
