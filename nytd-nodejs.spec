@@ -1,5 +1,7 @@
 %define   _base node
 %define   _dist_ver %(sh /usr/lib/rpm/redhat/dist.sh)
+%define _unpackaged_files_terminate_build 0
+%define _missing_doc_files_terminate_build 0
 
 %global tapsetroot /usr/share/systemtap
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}
