@@ -98,6 +98,10 @@ if [ -z %{_node_arch} ];then
   exit 1
 fi
 
+pushd $RPM_BUILD_DIR/%{_base}-v%{version}/deps
+unzip ../../../../icu4c-56_1-src.zip
+popd
+
 ./configure \
     --shared-openssl \
     --shared-openssl-includes=%{_includedir} \
